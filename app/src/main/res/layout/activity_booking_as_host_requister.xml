@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_back_bookingashost"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:id="@+id/contact_the_host_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+<!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/firstline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#9E9E9E"
+                        android:layout_alignParentBottom="true"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="5"
+                        android:paddingLeft="20dp"
+                        android:layout_above="@+id/firstline">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:text="Table Stats"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#959595"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="#ffffff"
+                                android:text="Accomodates : "
+                                android:textSize="16sp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="10 "
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="days"
+                                    android:textSize="16sp"
+                                    android:visibility="invisible"/>
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="#ffffff"
+                                android:text="Booked : "
+                                android:textSize="16sp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="6 "
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="days"
+                                    android:textSize="16sp"
+                                    android:visibility="invisible"/>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="#ffffff"
+                                android:text="Pending : "
+                                android:textSize="16sp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="4 "
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="days"
+                                    android:textSize="16sp"
+                                    android:visibility="invisible"/>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textColor="#ffffff"
+                                android:text="Time Remaining : "
+                                android:textSize="16sp"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="3 "
+                                    android:textSize="16sp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:textColor="#ffffff"
+                                    android:text="days"
+                                    android:textSize="16sp"
+                                    android:visibility="visible"/>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+-->
+
+
+<!--
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="165dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/red_mold_rectangle"
+                    android:gravity="center">
+
+
+                    <customTextView.AvenirHeavyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invite Splitters"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"/>
+
+                </LinearLayout>
+-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <customTextView.AvenirBlackTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue"
+                        android:textSize="14sp"
+                        android:textColor="#fff"
+                        />
+
+                    <customTextView.AvenirBlackTextView
+                        android:id="@+id/tv_venuename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <customTextView.AvenirHeavyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    android:textColor="#ffffff"
+                    android:text="Splitters"/>
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_spliter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    >
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+         <!--   <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#9E9E9E"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                />-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_aboveall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp"
+
+                            >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+
+                                >
+
+                                <customTextView.AvenirBlackTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Booking for"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <customTextView.AvenirBlackTextView
+                                    android:id="@+id/tv_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_alignParentRight="true"
+                                    />
+
+
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+
+                                >
+
+                                <customTextView.AvenirBlackTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="TABLE 1"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <customTextView.AvenirMediumTextView
+                                    android:id="@+id/tv_minamount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Min Deposit"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:layout_alignParentRight="true"
+                                    />
+
+
+                                <customTextView.AvenirBlackTextView
+                                    android:layout_below="@+id/tv_minamount"
+                                    android:layout_toLeftOf="@+id/tv_minimumamount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$ "
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    />
+
+                                <customTextView.AvenirBlackTextView
+                                    android:layout_below="@+id/tv_minamount"
+                                    android:id="@+id/tv_minimumamount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#fff"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+
+                                    />
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                >
+
+                                <customTextView.AvenirMediumTextView
+                                    android:id="@+id/enter_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Enter your amount"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingBottom="10dp"
+                                    />
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_amountbox"
+                                    android:layout_below="@+id/enter_amount"
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/edittext_background_contactthehost"
+                                    >
+
+                                    <customTextView.AvenirBlackTextView
+                                        android:layout_toLeftOf="@+id/tv_tableamount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$ "
+                                        android:textColor="#fff"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        android:layout_centerVertical="true"
+                                        />
+
+                                    <customTextView.AvenirBlackTextView
+                                        android:id="@+id/tv_tableamount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="#ffffff"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="5dp"
+                                        />
+
+                                </RelativeLayout>
+
+                                <customTextView.AvenirBookTextView
+                                    android:id="@+id/avai"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Available "
+                                    android:textColor="#77C522"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+                                <customTextView.AvenirHeavyTextView
+                                    android:id="@+id/tv_noofseat"
+                                    android:layout_toRightOf="@+id/avai"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#77C522"
+                                    android:textStyle="bold"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#9E9E9E"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <customTextView.AvenirHeavyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="GUESTS "
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+
+                                <customTextView.AvenirHeavyTextView
+                                    android:id="@+id/tv_guestcount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+
+                                >
+
+                                <customTextView.AvenirBookTextView
+                                    android:id="@+id/male"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Male"
+                                    android:textSize="14sp"
+                                    android:textColor="#9E9E9E"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <!-- <SeekBar
+                                     android:id="@+id/seek_bar1"
+                                     android:layout_toRightOf="@+id/male"
+                                     android:layout_toLeftOf="@+id/male_no"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:maxHeight="7dp"
+                                     android:progressDrawable="@drawable/seekbar_style"
+                                     android:thumb="@drawable/white_circle"
+                                     android:layout_centerVertical="true"
+                                     />-->
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/male"
+                                    android:gravity="center"
+
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/male_minus"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/minus"
+                                        android:padding="8dp"
+                                        />
+
+                                    <customTextView.AvenirBookTextView
+                                        android:id="@+id/male_no"
+                                        android:layout_toRightOf="@+id/male_minus"
+                                        android:layout_width="50dp"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="16sp"
+                                        android:textColor="#9E9E9E"
+                                        android:gravity="center"
+                                        android:layout_centerVertical="true"
+
+                                        />
+
+                                    <ImageView
+                                        android:id="@+id/male_plus"
+                                        android:layout_toRightOf="@+id/male_no"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/plus"
+                                        android:padding="8dp"
+                                        />
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="15dp"
+                                >
+
+                                <customTextView.AvenirBookTextView
+                                    android:id="@+id/female"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Female"
+                                    android:textSize="14sp"
+                                    android:textColor="#9E9E9E"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <!-- <SeekBar
+                                     android:id="@+id/seek_bar2"
+                                     android:layout_toRightOf="@+id/female"
+                                     android:layout_toLeftOf="@+id/female_no"
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:maxHeight="7dp"
+                                     android:progressDrawable="@drawable/seekbar_style"
+                                     android:thumb="@drawable/white_circle"
+                                     android:layout_centerVertical="true"
+                                     />-->
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/female"
+                                    android:gravity="center"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/female_minus"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/minus"
+                                        android:padding="8dp"
+                                        android:layout_centerVertical="true"
+                                        />
+
+                                    <customTextView.AvenirBookTextView
+                                        android:id="@+id/female_no"
+                                        android:layout_toRightOf="@+id/female_minus"
+                                        android:layout_width="50dp"
+                                        android:layout_height="match_parent"
+                                        android:textSize="16sp"
+                                        android:gravity="center"
+                                        android:textColor="#9E9E9E"
+                                        android:layout_centerVertical="true"
+
+                                        />
+
+                                    <ImageView
+                                        android:id="@+id/female_plus"
+                                        android:layout_toRightOf="@+id/female_no"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/plus"
+                                        android:padding="8dp"
+                                        android:layout_centerVertical="true"
+
+                                        />
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="#9E9E9E"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/contact_block"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_hostthetable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SPLITTERS"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#fff"
+                                android:visibility="gone"
+                                />
+
+                            <RelativeLayout
+                                android:id="@+id/rl_contactthehost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="YOUR OFFER"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    />
+
+                                <customTextView.AvenirHeavyTextView
+                                    android:id="@+id/et_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="100"
+                                    android:textSize="20sp"
+                                    android:inputType="numberDecimal"
+                                    android:textCursorDrawable="@drawable/curser"
+                                    android:singleLine="true"
+                                    android:textColor="#ffffff"/>
+
+                                <customTextView.AvenirHeavyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/et_price"
+                                    android:textColor="#ffffff"
+                                    android:layout_marginRight="5dp"
+                                    android:textSize="20sp"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none"
+                            android:visibility="gone"
+                            ></android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_viewdetails"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_selector"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center">
+
+                            <customTextView.AvenirHeavyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="View Event Details"
+                                android:textColor="@drawable/text_selecter"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_invitesplitter"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_selector"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <customTextView.AvenirBookTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INVITE SPLITTERS"
+                                android:textColor="@drawable/text_selecter"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/done"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_selector"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center">
+
+                            <customTextView.AvenirBookTextView
+                                android:id="@+id/tv_donetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DONE"
+                                android:textColor="@drawable/text_selecter"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_authorize"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_selector"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <customTextView.AvenirBookTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AUTHORIZE"
+                                android:textColor="@drawable/text_selecter"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_cancel"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/button_selector"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <customTextView.AvenirHeavyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CANCEL BOOKING"
+                                android:textColor="@drawable/text_selecter"
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar10"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>
+

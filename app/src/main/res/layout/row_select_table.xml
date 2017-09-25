@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_accent_row_background_selector"
+    >
+
+    <LinearLayout
+        android:id="@+id/block1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table 1"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 1000"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+
+
+            <ProgressBar
+                android:id="@+id/pbar"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_toRightOf="@+id/payment"
+                android:layout_toLeftOf="@+id/rating"
+                android:layout_centerVertical="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:progressDrawable="@drawable/progressbar_style"
+                android:secondaryProgress="100"
+                />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6/10"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_buttonarea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_contactthehost"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_selector"
+                android:layout_centerInParent="true"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_buttontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/text_selecter"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/block1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#909090"
+        />
+
+
+
+</RelativeLayout>

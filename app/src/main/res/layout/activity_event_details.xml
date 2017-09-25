@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.EventDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="19sp"
+            android:textColor="#bdbdbd"
+            android:text="Event Details"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_chat"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/chat_icon"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_guestlist"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:background="@drawable/white_mold_rectangle">
+
+                <customTextView.AvenirHeavyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GL"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/eventimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_full_chat"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center"-->
+                <!--android:weightSum="5">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.5"></LinearLayout>-->
+
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="25dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="25dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:src="@drawable/bottle" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/ll_chat"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:gravity="center">&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="25dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="25dp"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:src="@drawable/chat" />&ndash;&gt;-->
+
+
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_chat"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="2.5"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:background="@drawable/gray_mold_rectangle">-->
+
+                    <!--<customTextView.AvenirHeavyTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="View Chat Room"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textStyle="bold" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="0.5"></LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:padding="10dp">
+
+                <customTextView.AvenirBlackTextView
+                    android:id="@+id/eventname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/tw__solid_white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+                <customTextView.AvenirBookTextView
+                    android:id="@+id/eventurl"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eventname"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150sp">
+
+                <TextView
+                    android:id="@+id/upperline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bdbdbd"
+                    android:layout_alignParentTop="true"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/upperline"
+                    android:layout_above="@+id/lowerline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="40dp"
+                        android:orientation="vertical">
+
+                        <customTextView.AvenirBookTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Event Date"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <customTextView.AvenirMediumTextView
+                            android:id="@+id/tv_event_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="42sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"/>
+
+                        <customTextView.AvenirBookTextView
+                            android:id="@+id/tv_event_monthyear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.7"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:orientation="vertical">
+
+                        <customTextView.AvenirBookTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Event Time"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <customTextView.AvenirMediumTextView
+                                android:id="@+id/event_starttime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:textSize="42sp"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="10dp"/>
+
+                            <TextView
+                                android:id="@+id/event_startdate_am"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  PM"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <customTextView.AvenirBookTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="to "
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <customTextView.AvenirBookTextView
+                                android:id="@+id/event_endtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lowerline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bdbdbd"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_above="@+id/onlylowerline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <customTextView.AvenirMediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Description"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <customTextView.AvenirBookTextView
+                        android:id="@+id/tv_eventdesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"
+                        />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/onlylowerline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#bdbdbd"
+                    android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="40dp"
+                android:orientation="vertical">
+
+                <customTextView.AvenirMediumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Venue"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <customTextView.AvenirBlackTextView
+                    android:id="@+id/tv_venuename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <customTextView.AvenirBookTextView
+                    android:id="@+id/tv_venueaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></com.google.android.gms.maps.MapView>
+
+                <LinearLayout
+                    android:id="@+id/ll_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+            </RelativeLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottlemenu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_mold_rectangle"
+        android:gravity="center"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/bottle"
+            android:layout_marginRight="10dp"/>
+
+        <customTextView.AvenirBookTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTTLE MENU"
+            android:textColor="#bdbdbd"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_tablemenu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_mold_rectangle"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/table"
+            android:layout_marginRight="10dp"/>
+
+        <customTextView.AvenirBookTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VENUE LAYOUT"
+            android:textColor="#bdbdbd"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/ll_booknow"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_selector"
+                    android:gravity="center">
+
+
+                    <customTextView.AvenirBookTextView
+                        android:id="@+id/tv_buttontext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/text_selecter"
+                        android:text="BOOK NOW"
+                        android:textSize="18sp"
+
+                        />
+
+                </LinearLayout>
+                
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

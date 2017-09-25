@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/total_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/image_block"
+                android:layout_width="65dp"
+                android:layout_height="65dp">
+
+                <ImageView
+                    android:id="@+id/image_border"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/red_circle"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/image1"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                />
+
+                <TextView
+                    android:id="@+id/text_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:text="A"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/mold_gray_circel"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/image_block"
+                android:layout_toLeftOf="@+id/check_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avik Ray "
+                android:textColor="#040404"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:padding="10dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/check_id"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/uncheck"
+                />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>

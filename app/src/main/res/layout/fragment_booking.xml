@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        android:background="#ECEDF1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_pending"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tobar_booking_background_selector"
+            >
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENDING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@drawable/tabbar_text_selecter"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_pending"
+                android:layout_below="@+id/tv3"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#444549"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_upcoming"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tobar_booking_background_selector">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPCOMING"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@drawable/tabbar_text_selecter"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_upcoming"
+                android:layout_below="@+id/tv1"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#444549"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_previous"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/tobar_booking_background_selector">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAST"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@drawable/tabbar_text_selecter"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_previous"
+                android:layout_below="@+id/tv2"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#444549"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_below="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <customTextView.AvenirHeavyTextView
+        android:id="@+id/tv_nobooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="NO BOOKING YET!"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

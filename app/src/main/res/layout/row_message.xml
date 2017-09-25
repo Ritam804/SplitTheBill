@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_white_row_background_selector"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/round_appicon"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            >
+
+
+            <customTextView.AvenirHeavyTextView
+                android:id="@+id/tv_eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="SOME IS LOREM ENENTS"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <customTextView.AvenirMediumTextView
+                android:id="@+id/tv_venuename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue Name"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="E Central BLVD. Florida, 27611"
+                android:textColor="#444549"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECEDF1"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_lastmessagesenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="10:09am"
+                android:textColor="#444549"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="A"
+                android:layout_margin="10dp"
+                android:background="@drawable/mold_gray_circel"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+
+                />
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECEDF1"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>

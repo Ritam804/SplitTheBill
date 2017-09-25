@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tw__transparent"
+    tools:context="com.ritam.splitthebill.splitthebill.fragments.SecondPage_SignUp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Choose Your Password"
+            android:textColorHint="@color/tw__solid_white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/tw__solid_white"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/curser"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#696969"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp">
+
+            <EditText
+                android:id="@+id/et_repass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:textColorHint="#bdbdbd"
+                android:textSize="15sp"
+                android:textColor="#bdbdbd"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/curser"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:layout_centerInParent="true"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:src="@drawable/ic_action_dot"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#696969"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_gender"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp">
+
+            <ImageView
+                android:id="@+id/iv_genderlogo"
+                android:layout_width="22dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/iv_genderlogo2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="15sp"
+                android:textColor="#bdbdbd"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/curser"
+                android:padding="5dp"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:src="@drawable/ic_action_dot"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="#696969" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_dob"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="DOB"
+                android:textColor="#bdbdbd"
+                android:textCursorDrawable="@drawable/curser"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="18sp"
+                android:layout_height="18sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_action_dot" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+             <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By signing up,you agree to our"
+                android:textColor="#bdbdbd"
+                android:textSize="16sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customTextView.AvenirHeavyTextView
+                        android:id="@+id/tv_termsandconditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms And Conditions"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bdbdbd"/>
+
+                </LinearLayout>
+
+                <customTextView.AvenirHeavyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#bdbdbd"
+                    android:text=" &amp; "/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <customTextView.AvenirHeavyTextView
+                        android:id="@+id/tv_privacypolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="#bdbdbd"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#bdbdbd"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/ll_signupbutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#a33636"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+            <com.digits.sdk.android.DigitsAuthButton
+                android:id="@+id/auth_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

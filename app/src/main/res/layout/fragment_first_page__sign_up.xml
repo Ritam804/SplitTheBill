@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tw__transparent"
+    tools:context="com.ritam.splitthebill.splitthebill.fragments.FirstPage_SignUp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColorHint="@color/tw__solid_white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/tw__solid_white"
+            android:background="@null"
+            android:layout_marginBottom="15dp"
+            android:textCursorDrawable="@drawable/curser"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#696969"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/et_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="#bdbdbd"
+            android:textSize="15sp"
+            android:textColor="#bdbdbd"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/curser"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#696969"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="15dp"/>
+
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="#bdbdbd"
+            android:textSize="15sp"
+            android:textColor="#bdbdbd"
+            android:background="@null"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:padding="5dp"
+            android:textCursorDrawable="@drawable/curser"
+            android:inputType="textEmailAddress"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_next"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textColor="#a33636"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

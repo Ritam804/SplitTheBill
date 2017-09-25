@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:background="@drawable/listview_accent_row_background_selector">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_eventrating_splittersimage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/image1"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <customTextView.AvenirMediumTextView
+                android:id="@+id/tv_eventrating_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ritam Bose"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:singleLine="true"/>
+
+            <RatingBar
+                android:id="@+id/row_eventrating_rating_bar"
+                android:layout_below="@+id/venue_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:rating="5"
+                style="@style/StarRatingBar"
+                android:layout_marginTop="10dp"
+                android:isIndicator="false"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

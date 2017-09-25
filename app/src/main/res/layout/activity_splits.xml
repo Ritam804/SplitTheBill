@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.Splits">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="Splits"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_splits"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_nosplits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Splits"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

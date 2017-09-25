@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@drawable/listview_white_row_background_selector"
+
+        >
+
+   <RelativeLayout
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:background="@color/colorAccent"
+       >
+
+       <TextView
+           android:id="@+id/tv_eventmonth"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:text="May"
+           android:textColor="#fff"
+           android:textSize="14sp"
+           android:layout_centerInParent="true"
+           android:layout_alignParentTop="true"
+           />
+
+       <TextView
+           android:id="@+id/tv_eventdate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="29"
+           android:textColor="#fff"
+           android:textSize="28sp"
+           android:layout_centerInParent="true"
+           />
+
+       <TextView
+           android:id="@+id/tv_eventtime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="20dp"
+           android:text="08.30 PM"
+           android:textColor="#fff"
+           android:textSize="14sp"
+           android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+           />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="#fff"
+           android:layout_alignParentBottom="true"
+           />
+
+   </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            >
+
+
+            <customTextView.AvenirHeavyTextView
+                android:id="@+id/tv_eventname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="SOME IS LOREM EVENTS"
+                android:textColor="#444549"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <customTextView.AvenirMediumTextView
+                android:id="@+id/tv_venuename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue Name"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_venueaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="E Central BLVD. Florida, 27611"
+                android:textColor="#444549"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECEDF1"
+                android:layout_alignParentBottom="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_pending"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pending"
+                android:alpha="0.3"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_confirmed"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/confirmed"
+                android:alpha="0.3"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_past"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/past"
+                android:alpha="0.3"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Table Name"
+                android:textColor="#444549"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_tablename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#444549"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textColor="#444549"
+                android:textSize="9sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/tv_referenceid"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_referenceid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="1234HJ234"
+                android:textColor="#444549"
+                android:textSize="9sp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+
+                />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ECEDF1"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

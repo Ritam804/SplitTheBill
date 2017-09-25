@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.EventRating">
+
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_back_eventrating"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#9E9E9E"
+            android:text="Rate This Event"
+            android:textSize="16sp"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_eventdetails"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <customTextView.AvenirHeavyTextView
+            android:id="@+id/evntname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:text="This is atesst event"
+            />
+
+
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_below="@+id/venue_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:rating="5"
+            style="@style/StarRatingBar"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/ll_eventdetails"
+        android:layout_above="@+id/ll_submit"
+        android:id="@+id/spliterlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+<LinearLayout
+    android:id="@+id/ll_submit"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/square_button_selecter"
+    android:gravity="center"
+    android:layout_alignParentBottom="true">
+
+    <customTextView.AvenirHeavyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textColor="@drawable/text_selecter"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>

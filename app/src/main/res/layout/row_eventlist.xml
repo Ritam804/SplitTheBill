@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    >
+
+    <ImageView
+        android:id="@+id/eventimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOME IS LOREM EVENT"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/tw__solid_white"
+            />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_below="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 April 2017"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/tw__solid_white"
+            />
+
+        <customTextView.AvenirMediumTextView
+            android:id="@+id/venue_name"
+            android:layout_below="@+id/event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue Name"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@color/tw__solid_white"
+            />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_below="@+id/venue_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:rating="5"
+            style="@style/StarRatingBar"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:isIndicator="true"
+            />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="20dp"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/rating_bar">-->
+
+            <customTextView.AvenirMediumTextView
+                android:id="@+id/tv_followercount"
+                android:layout_below="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="11sp"
+                android:paddingTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/tw__solid_white"/>
+
+            <!--<customTextView.AvenirMediumTextView-->
+                <!--android:id="@+id/attending"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="FOLLOWER ATTENDING"-->
+                <!--android:textSize="11sp"-->
+                <!--android:textColor="@color/tw__solid_white"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

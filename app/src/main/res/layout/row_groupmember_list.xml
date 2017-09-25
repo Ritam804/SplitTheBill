@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_white_row_background_selector"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp">
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"/>
+
+    <customTextView.AvenirLightTextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/userimage"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text="John Doe"/>
+
+    <LinearLayout
+        android:id="@+id/ll_host"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/gray_mold_rectangle"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <customTextView.AvenirMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOST"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

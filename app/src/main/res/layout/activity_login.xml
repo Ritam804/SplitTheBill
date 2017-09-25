@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/loginscreen_logo"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp"/>
+        
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Email : "
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <customTextView.AvenirHeavyEditTextView
+            android:id="@+id/et_email"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/accent_mold_background"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff"
+            android:hint="Email / Username"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/curser"/>
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Password : "
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <customTextView.AvenirHeavyEditTextView
+            android:id="@+id/et_pass"
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/accent_mold_background"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:paddingLeft="10dp"
+            android:textColorHint="#ffffff"
+            android:hint="Password"
+            android:gravity="center_vertical"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@drawable/curser"/>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/ll_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:background="@drawable/black_square_background"
+                android:gravity="center">
+
+                <customTextView.AvenirBlackTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:text="Log In"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/ll_signup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                android:background="@drawable/black_square_background"
+                android:gravity="center">
+
+                <customTextView.AvenirBlackTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22dp"
+                    android:textColor="#ffffff"
+                    android:text="Sign Up"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fblogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/social_facebook_box_blue"/>
+
+            <customTextView.AvenirHeavyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login with Facebook"
+                android:textSize="18sp"
+                android:textColor="#46639c"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_fb"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Login with Facebook"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fb_drawable"
+            android:visibility="gone"/>
+
+
+<customTextView.AvenirHeavyTextView
+    android:id="@+id/tv_forgotpass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#bdbdbd"
+    android:textSize="18sp"
+    android:text="Forgot Password?"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"/>
+
+        <customTextView.AvenirHeavyTextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#bdbdbd"
+            android:textSize="18sp"
+            android:text="Help"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+        
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>

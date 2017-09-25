@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.Settings">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_back_settings"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<customTextView.AvenirHeavyTextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="Invite Splitters"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:background="#000"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textStyle="bold"-->
+            <!--android:paddingLeft="20dp"-->
+            <!--android:textSize="16sp"/>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_facebook"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--&gt;-->
+
+
+            <!--<customTextView.AvenirMediumTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Facebook Friends"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="15sp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/right_arrow"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="20dp"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_contact"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--&gt;-->
+
+
+            <!--<customTextView.AvenirMediumTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Contacts"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textSize="15sp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@drawable/right_arrow"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="20dp"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Accounts"
+            android:paddingLeft="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_payments"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payments"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_changepass"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_blocked"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blocked Users"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_privateac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Account"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ToggleButton
+                android:id="@+id/private_ac"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_selector"
+                android:layout_marginRight="20dp"
+                android:textOff=""
+                android:textOn=""
+                android:clickable="false"/>
+
+        </RelativeLayout>
+
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="General Settings"
+            android:background="#000"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_notifivations"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Push Notifications"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ToggleButton
+                android:id="@+id/tb_notification"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_selector"
+                android:layout_marginRight="20dp"
+                android:textOff=""
+                android:textOn=""
+                android:clickable="false"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_cellular"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wifi Only"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_linkac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linked Accounts"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+
+        <customTextView.AvenirHeavyTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="About"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#000"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_rate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate App"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_share"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share App"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_terms"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"/>
+            
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_logout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/listview_accent_row_background_selector"
+            >
+
+
+            <customTextView.AvenirMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@drawable/text_selecter"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/logout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@xml/progress"
+        android:visibility="gone"/>
+
+</RelativeLayout>

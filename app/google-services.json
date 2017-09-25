@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "298324612717",
+    "firebase_url": "https://splitthebill-166006.firebaseio.com",
+    "project_id": "splitthebill-166006",
+    "storage_bucket": "splitthebill-166006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298324612717:android:2e266e06c7d454b1",
+        "android_client_info": {
+          "package_name": "com.ritam.splitthebill.splitthebill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298324612717-cd9795uanc77jtd0a2njiuvqsqpcut7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ritam.splitthebill.splitthebill",
+            "certificate_hash": "c18119f61238bc2e73cdb70443a0858e050e0180"
+          }
+        },
+        {
+          "client_id": "298324612717-shn1dstc60ppe45m185im1i7k53pmg2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMVMHYpRnCMvC9lcYkNmSmQG31Hu-RbPY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298324612717-shn1dstc60ppe45m185im1i7k53pmg2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

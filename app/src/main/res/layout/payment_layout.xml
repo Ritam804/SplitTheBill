@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#292929"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Booking as a Host"
+            android:textColor="#9E9E9E"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/card_input_widget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            stripe:cardTextErrorColor="#CB1010"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gray_mold_rectangle"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/pay"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button_selector"
+            android:text="Add"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@drawable/text_selecter"
+            android:layout_centerHorizontal="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:visibility="gone"
+        >
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@xml/progress"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingRight="40dp"-->
+        <!--android:paddingLeft="40dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingTop="50dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--&gt;-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:hint="Card Number"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textColorHint="#fff"-->
+            <!--android:textStyle="bold"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="16"-->
+            <!--android:textCursorDrawable="@drawable/curser"-->
+            <!--/>-->
+        <!---->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="#9E9E9E"-->
+            <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingRight="20dp"-->
+                <!--&gt;-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="Month"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColorHint="#9E9E9E"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="2"-->
+                    <!--android:textColor="#9E9E9E"-->
+                    <!--android:textCursorDrawable="@drawable/curser"-->
+
+                    <!--/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#9E9E9E"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--&gt;-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="Year"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColorHint="#9E9E9E"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="4"-->
+                    <!--android:textColor="#9E9E9E"-->
+                    <!--android:textCursorDrawable="@drawable/curser"-->
+                    <!--/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#9E9E9E"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:weightSum="2"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingRight="20dp"-->
+                <!--&gt;-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:hint="CVV"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:textColorHint="#9E9E9E"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:inputType="number"-->
+                    <!--android:maxLength="3"-->
+                    <!--android:textColor="#9E9E9E"-->
+                    <!--android:textCursorDrawable="@drawable/curser"-->
+                    <!--/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#9E9E9E"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+        <!---->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+                <!--android:id="@+id/checkbox"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:src="@drawable/uncheck"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:hint="Save this card for faster checkout"-->
+                <!--android:textSize="14sp"-->
+                <!--android:textColorHint="#fff"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--/>-->
+            <!---->
+        <!--</LinearLayout>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/pay"-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginTop="40dp"-->
+            <!--android:background="@drawable/pay"-->
+            <!--android:text=""-->
+            <!--android:textSize="18sp"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#292929"
+    android:orientation="vertical"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.SignUpActivity"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_arrow"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp">
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="#a33636"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_second"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="#696969"/>
+
+</LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_signup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

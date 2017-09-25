@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Split The Bill</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="facebook_app_id">679992388868945</string>
+
+    <string name="fb_login_protocol_scheme">fb679992388868945</string>
+    <string name="title_activity_first__sign_up">First_SignUp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_event_listing">EventListing</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_event_details">EventDetails</string>
+    <string name="title_activity_select_table">SelectTable</string>
+    <string name="title_activity_booking_as_host">BookingAsHost</string>
+    <string name="title_activity_message_details">MessageDetails</string>
+    <string name="title_activity_contact_page">ContactPage</string>
+    <string name="title_activity_group_details">GroupDetails</string>
+    <string name="title_activity_counter_bit">CounterBit</string>
+    <string name="title_activity_event_full_details">EventFullDetails</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_others_profile">OthersProfile</string>
+    <string name="title_activity_event_rating">EventRating</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_splitters">Splitters</string>
+    <string name="title_activity_splits">Splits</string>
+    <string name="title_activity_user_search">UserSearch</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_forgot_password__first_screen">ForgotPassword_FirstScreen</string>
+    <string name="title_activity_forgot_password__second_screen">ForgotPassword_SecondScreen
+    </string>
+</resources>

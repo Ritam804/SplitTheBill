@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ritam.splitthebill.splitthebill.activity.GroupDetails">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent">
+
+
+        <TextView
+            android:id="@+id/tv_headertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:capitalize="characters"
+            android:text="SOME IS LOREM EVENT"
+            android:textColor="#bdbdbd"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_groupdetails_back"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/block1"
+            android:background="#909090" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@color/colorAccent"
+            android:orientation="vertical"
+            android:weightSum="4.7">
+
+            <ImageView
+                android:id="@+id/iv_groupimage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <customTextView.AvenirHeavyTextView
+                    android:id="@+id/tv_eventname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SOME IS LOREM EVENT"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <customTextView.AvenirLightTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="dv.sd;v;dsv.s.v'dfsdfsdSDVSDV"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                </LinearLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ebecf0"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <customTextView.AvenirLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="Venue"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <customTextView.AvenirHeavyTextView
+                        android:id="@+id/tv_venuename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="VENUE NAME"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+                    <customTextView.AvenirLightTextView
+                        android:id="@+id/tv_venueaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Venue"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <customTextView.AvenirLightTextView
+                        android:id="@+id/tv_tablename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="Venue"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <customTextView.AvenirHeavyTextView
+                        android:id="@+id/tv_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:singleLine="true"
+                        android:text="VENUE NAME"
+                        android:textColor="#ffffff"
+                        android:textSize="13sp" />
+
+                    <customTextView.AvenirLightTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#ffffff">
+
+            <customTextView.AvenirLightTextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Participants"
+                android:textColor="#9e9e9e"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_groupmember"
+                android:layout_below="@+id/tv_text"
+                android:layout_above="@+id/ll_exitgroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"></android.support.v7.widget.RecyclerView>
+
+
+<LinearLayout
+    android:id="@+id/ll_exitgroup"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="#ebecf0"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    >
+    
+    <customTextView.AvenirMediumTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="EXIT GROUP"
+        android:textSize="15sp"
+        />
+    
+</LinearLayout>
+
+            
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

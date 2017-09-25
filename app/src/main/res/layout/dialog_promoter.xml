@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorAccent">
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrow" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Promoter"
+            android:textColor="#bdbdbd"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--&gt;-->
+
+        <!--</LinearLayout>-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_promoter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/ll_promoter_done"></android.support.v7.widget.RecyclerView>
+
+                        <!--<LinearLayout-->
+                            <!--android:id="@+id/ll_promoter_done"-->
+                            <!--android:layout_width="200dp"-->
+                            <!--android:layout_height="45dp"-->
+                            <!--android:background="@drawable/button_selector"-->
+                            <!--android:gravity="center"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_alignParentBottom="true">-->
+
+                            <!--<customTextView.AvenirMediumTextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:text="DONE"-->
+                                <!--android:textColor="@drawable/text_selecter"-->
+                                <!--android:textSize="15sp"/>-->
+
+
+                        <!--</LinearLayout>-->
+
+                    </RelativeLayout>
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:background="#bdbdbd"/>-->
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="20dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="#000000">-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--&gt;-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:text="TICKET SALES"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="20sp" />-->
+
+                <!--<customTextView.AvenirLightTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="Non Refundable"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13sp" />-->
+
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp">-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:id="@+id/txt_price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="PRICE :"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_toRightOf="@+id/txt_price"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="$30"-->
+                <!--/>-->
+
+                <!--<customTextView.AvenirLightTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="Available"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:id="@+id/txt_tkt"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="# OF TICKET :"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:layout_toRightOf="@+id/txt_tkt"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="2"-->
+                <!--/>-->
+
+                <!--<customTextView.AvenirMediumTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="13dp"-->
+                <!--android:text="97"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:background="#bdbdbd"/>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--&gt;-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="17dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="ADD CREDIT CARD"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+
+                <!--<TextView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:text="+"-->
+                <!--android:gravity="right"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="#fff"-->
+                <!--/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:background="#bdbdbd"/>-->
+
+                <!--<customTextView.AvenirMediumTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="14dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="TOTAL"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+                <!--<customTextView.AvenirHeavyTextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="28dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="$60"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_weight="1">-->
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:background="@drawable/red_mold_rectangle"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerInParent="true">-->
+
+                <!--<customTextView.AvenirMediumTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="BUY"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="15sp"/>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

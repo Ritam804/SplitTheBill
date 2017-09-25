@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/listview_accent_row_background_selector">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_above="@+id/host_line"
+            android:orientation="horizontal"
+            android:weightSum="6.5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_splits_splttername"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <customTextView.AvenirMediumTextView
+                    android:id="@+id/tv_splits_splittername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:text="Joel Pederson"
+                    android:singleLine="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <customTextView.AvenirHeavyTextView
+                    android:id="@+id/tv_splits_splitterpayement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:text="Paid"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <RatingBar
+                        android:id="@+id/rating_bar"
+                        android:layout_below="@+id/venue_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:rating="5"
+                        style="@style/StarRatingBar"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:isIndicator="true"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/counter_male"
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:id="@+id/tv_splits_splittermalecounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="13sp"
+                    />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/counter_female"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/tv_splits_splitterfemalecounter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="13sp"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/host_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9E9E9E"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
